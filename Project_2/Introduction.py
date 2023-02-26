@@ -1,8 +1,11 @@
 import streamlit as st
 import webbrowser
 from PIL import Image
+import os
 
-image = Image.open("assets/profile_picture.jpg")
+path = os.path.dirname(__file__)
+picture = path+'\\assets\profile_picture.jpg'
+image = Image.open(picture)
 st.image(image,width=250)
 
 st.title("Hello! I'm :blue[Shivam kumar jha] from Hyderabad, India.")
