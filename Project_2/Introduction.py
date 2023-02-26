@@ -4,7 +4,7 @@ from PIL import Image
 import os
 
 path = os.path.dirname(__file__)
-picture = path+'\\assets\profile_picture.jpg'
+picture = path+'/assets/profile_picture.jpg'
 image = Image.open(picture)
 st.image(image,width=250)
 
