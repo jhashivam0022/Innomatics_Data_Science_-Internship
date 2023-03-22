@@ -1,0 +1,6 @@
+Noting down the bugs!
+
+--> Method Not Allowed
+
+Added "GET" request in the method, which started accepting the get and post requests on index "/" --> app.route("/",method=["POST","GET"])
+
