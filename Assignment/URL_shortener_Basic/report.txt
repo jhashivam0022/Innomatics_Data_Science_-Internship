@@ -1,0 +1,5 @@
+Problem Faced while developing the Application
+
+db not found( code flask db init)
+
+Error was "Model", which i have written in small case "model"

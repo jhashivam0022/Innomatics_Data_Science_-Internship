@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Url History
+{% endblock %}
+
+{% block content %}
+<br>
+<div>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Original Url</th>
+            <th>Short Url</th>
+        </tr>
+       {% for url in alllinks %}
+        <tr>
+            <td>{{url.id}}</td>
+            <td>{{url.url}}</td>
+            <td>{{url.shorter}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<br>
+<div>
+    <form action="{{ url_for('clear_history') }}" method="POST">
+        <button type="submit">Clear History</button>
+    </form>
+</div>
+
+{% endblock %}
